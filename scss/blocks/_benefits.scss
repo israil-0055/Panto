@@ -1,0 +1,45 @@
+.benefits{
+    padding: 120px 0;
+}
+.benefits__row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    column-gap: 20px;
+}
+.benefits__content{
+    display: flex;
+    column-gap: 41px;
+}
+.benefits__title{
+    max-width: 260px;
+    font-size: 42px;
+    font-weight: 700;
+}
+.benefit{
+    max-width: 289px;
+}
+.benefit-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.benefit-text{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+
+    line-height: 185%;
+    opacity: 0.8;
+}
+.benefit-link{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+}
+.benefit2{
+    display: flex;
+}

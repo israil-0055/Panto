@@ -1,0 +1,88 @@
+@media (max-width:1200px){
+    .header-dot-vase{
+        left: calc(810 * 100% / 1455);
+        top: calc(777 * 100% / 1095);
+    }
+}
+@media (max-width:900px){
+    .nav__menu{
+        display: none;
+    }
+    .burger{
+        display: block;
+        position: fixed;
+
+        top: 46px;
+        right: 30px;
+        z-index: 11;
+    }
+    .nav--open .nav__menu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background: #2D2F33;
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 50px;
+
+        font-size: 34px;
+        font-weight: 600;
+        transition: all 1.0s;
+    }
+    .nav-sab-link::after{
+        display: none;
+    }
+    .nav__list{
+        display: none;
+    }
+    .info-dot{
+        display: none;
+    }
+    .benefit-title{
+        font-size: 20px;
+    }
+    .benefits__row{
+       grid-template-columns: repeat(2, 1fr);
+       gap: 60px;
+    }
+   
+}
+@media (max-width:700px){
+    .benefits{
+        padding: 60px 0;
+    }
+     .seaarch-form{
+        display: none;
+    }
+    .products__title{
+        font-size: 35 px;
+        margin-bottom: 0;
+    }
+    .tabs-filter{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    .slider-btn{
+        display: none;
+    }
+    .footer__row{
+        gap: 40px;
+    }
+}
+@media (max-width:500px){
+    .benefits__row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer__row{
+        flex-direction: column;
+    }
+}

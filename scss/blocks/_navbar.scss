@@ -1,0 +1,99 @@
+
+.nav{
+    display: grid;
+    align-items: center;
+    margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
+
+    grid-template-columns: 2fr 8fr 2fr; 
+    gap: 20px;
+}
+.nav__logo{
+    font-weight: 700;
+    font-size: clamp(18px, 0.946rem + 0.89vw, 28px);
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    align-self: center;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    column-gap: 65px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav__link{
+    transition: all .5s;
+
+    &.nav__link:hover{
+         opacity: 0.8;
+    }
+}
+.nav__cart{ 
+    align-self: center; 
+    justify-self: end;
+    position: relative;
+}
+.cart__count{
+    display: inline-block;
+    position: absolute;
+
+    top: 3px;
+    right: -11px;
+    height: 25px;
+    padding: 0 6px;
+    line-height: 25px;
+    font-weight: 600;
+
+    background-color: var(--accent);
+    border-radius: 40px;
+}
+.nav-link-item{
+    position: relative;
+}
+.nav-sab-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::after{
+        content: url('./../img/icons/eva_arrow.svg');
+        height: 18px; 
+    }
+}
+.nav__list{
+    position: absolute; 
+    width: 150px;
+    left: 0;
+    top: calc(100%);
+    pointer-events: none;
+
+    opacity: 0;
+    display: grid;
+    gap: 15px;
+
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #2D2F33;
+    transform: translate(0%, 10%);
+    transition: all .5s;
+}
+.sab-nav{
+    font-size: 16px;
+}
+.sab-nav-link{
+     transition: all .3s;
+}
+.sab-nav-link:hover{
+    color: var(--accent);
+}
+.nav-link-item:hover .nav__list{
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+.burger{
+    display: none;
+}

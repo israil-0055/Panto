@@ -1,0 +1,20 @@
+:root{
+    --textColor:#1E1E1E;
+    --textMuted: #8D8D8D;
+    --textCard: #0D1B39;
+    --accent:#E58411;
+    --white: #fff;
+
+    --font-main: 'Gilroy', sans-serif;
+    --font-cards: 'Inter', sans-serif;
+    
+}
+
+@mixin retina-bg($image) {
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi){
+        background-image: $image;
+    } 
+  }
+  

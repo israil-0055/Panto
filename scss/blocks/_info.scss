@@ -1,0 +1,100 @@
+.info-dot {
+	position: relative;
+	cursor: pointer;
+}
+
+.info-dot__circle {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+
+	transition: all 0.2s ease-in;
+}
+
+.info-dot__radius {
+	width: 32px;
+	height: 32px;
+
+	border: 0.86px solid #fff;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(4px);
+
+	animation: pulse 1s infinite alternate;
+}
+
+.info-dot:hover .info-dot__radius {
+	animation: pulse 1s infinite alternate paused;
+}
+
+.info-dot:hover .info-dot__circle {
+	opacity: 0.8;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+.info-union{
+	position: absolute;
+	top: -26px;
+	left: 50%;
+	transform: translate(-50%, -100%);
+
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	padding-top: 12px;
+
+    width: 112px;
+    height: 56px;
+    background-image: url("./../img/icons/union.svg");
+}
+.info-radio{
+	 clip: rect(0 0 0 0);
+	 clip-path: inset(50%);
+	 overflow: hidden;
+	 position: absolute;
+
+	 white-space: nowrap;
+	 height: 1px;
+	 width: 1px;
+}
+.info-radio:checked + .info-radio-fake{
+	background-image: url(./../img/icons/Group.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.info-radio-fake{
+	width: 24px;
+	height: 24px;
+
+	flex-shrink: 0;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	stroke: #fff;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+
+	&--orange{
+		background-color: var(--accent);
+	}
+	&--biruza{
+		background-color: #00D6C9;
+	}
+	&--gray{
+		background-color: #7C7C7C;
+	}
+}

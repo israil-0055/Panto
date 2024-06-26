@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+html, body {
+    color: var(--textColor);
+    font-family: var(--font-main);
+}
+body a{
+    color: inherit;
+}
+
+.container{
+    max-width: 1326px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &--small{
+        max-width: 1094px;
+        padding: 0 15px;
+    }
+}
+.none {
+    display: none !important;
+} 
